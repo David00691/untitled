@@ -1,0 +1,60 @@
+/*p {
+  color: red;
+  background-color: #AADDAA;
+}
+p:hover {
+  background-color: #FFF;
+}
+p:first-of-type::before{
+  font-size: 20px;
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+:root {
+  --text-color: #4D4D4D;
+  --background-color: #FFF4E0;
+  --primary-accent-color: #B46060;
+  --secondary-accent-color: hsl(22, 100.0%, 95%);
+}
+
+
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.page{
+  min-height: 100vh;
+  background-color: var(--background-color);
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+.card{
+  width: 800px;
+  min-height: 600px;
+  border: var(--primary-accent-color) solid 4px;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: var(--secondary-accent-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+.card-image {
+  background-image: url('http://localhost:63342/untitled/site.webmanifest?_ijt=jkovr9jpsbn8tp4v1mqcjgsrop')
+  background-size: cover;
+  background-position: right center;
+  background-repeat: no-repeat;
+  border-radius: 4px 0 0 4px;
+}
+.card-main{
+padding: 16px;
+}
